@@ -10,7 +10,7 @@ html{
 }
 
 ::-webkit-scrollbar{
-    width: .8rem;
+    width: 0rem;
 }
 
 /* ::-webkit-scrollbar-track{
