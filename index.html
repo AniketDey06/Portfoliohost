@@ -18,6 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+    <!-- <link rel="icon" type="image/x-icon" href="/images1/ad__3_-removebg-preview.png"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Aniket | Home</title>
     <link rel="stylesheet" href="css/style.css">
@@ -110,6 +116,14 @@
         </div>
         <div class="container">
             <div class="timeline">
+                <div class="cont right">
+                    <div class="content">
+                        <h2>Masters's in Computer Application</h2>
+                        <p>Narula Institute of Technology</p>
+                        <p>Maulana Abul Kalam Azad University of Technology</p>
+                        <p><i class="fa-regular fa-calendar-days"></i>2023 - 2025</p>
+                    </div>
+                </div>
                 <div class="cont left">
                     <div class="content">
                         <h2>Bachelors's in Computer Application</h2>
@@ -320,6 +334,9 @@
                             <a href="https://instagram.com/aniket_dey_?igshid=YmMyMTA2M2Y=" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
+                            <a href="https://www.threads.net/@aniket_dey_" target="_blank">
+                                <i class="fa-brands fa-threads"></i>
+                            </a>
                             <a href="https://twitter.com/AniketDey_?t=77IrFB-_2N0jn8jHbGXH6w&s=08" target="_blank">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
@@ -336,8 +353,6 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -346,49 +361,10 @@
         var typed = new Typed('#element', {
         strings: ['Web Devloper', 'Front-end Designer'],
         typeSpeed: 50,
+        loop: true
         });
     </script>
 
-    <!-- -----------slider----------- -->
-    <script>
-        var slides = document.getElementsByClassName("slides");
-        var total_slides = slides.length;
-        var i, index = 0;
-
-
-        document.getElementById("next").addEventListener("click",
-            function () {
-                index++;
-
-                goSlide(index);
-
-            })
-
-        document.getElementById("prev").addEventListener("click",
-            function () {
-                index--;
-
-                goSlide(index);
-
-            })
-
-        function goSlide(x) {
-            if (x >= total_slides) {
-                index = 0;
-            }
-
-            if (x < 0) {
-                index = total_slides - 1;
-            }
-
-            for (let i = 0; i < total_slides; i++) {
-                slides[i].classList.remove("active");
-
-            }
-
-            slides[index].classList.add("active");
-        }
-    </script>
 
     <!-- -----------Contact form----------- -->
 
