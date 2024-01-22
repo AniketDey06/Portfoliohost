@@ -655,6 +655,10 @@ form input, form textarea{
     flex-direction: column;
 }
 
+.foot-item p{
+    padding-bottom: 4px;
+}
+
 .foot-item a{
     padding-left: 0;
     color: #697477;
