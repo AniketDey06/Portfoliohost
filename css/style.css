@@ -507,6 +507,12 @@ section h1{
     margin-bottom: 20px;
 }
 
+.layer .links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .layer a{
     margin-top: 20px;
     color: black;
@@ -517,6 +523,7 @@ section h1{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    font-weight: 900;
 }
 
 .project-col:hover img{
