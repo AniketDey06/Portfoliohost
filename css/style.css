@@ -819,6 +819,11 @@ form input, form textarea{
         display: block;
     }
 
+    #about-text p{
+        text-align: center;
+        line-height: 20px;
+    }
+
     #photo img{
         /* width: 250px;
         height: 250px;
@@ -839,6 +844,10 @@ form input, form textarea{
     .project-box{
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .layer{
+        height: 100%;
     }
 
     .contact{
