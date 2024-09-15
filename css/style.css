@@ -1,35 +1,39 @@
-html.lenis, html.lenis body {
+/* Lenis Smooth Scroll Setup CSS */
+html.lenis,
+html.lenis body {
     height: auto;
-  }
-  
-  .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-  }
-  
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-  
-  .lenis.lenis-stopped {
-    overflow: hidden;
-  }
-  
-  .lenis.lenis-smooth iframe {
-    pointer-events: none;
-  }
+}
 
-*{
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+
+/* Normal CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0rem;
 }
 
@@ -44,10 +48,10 @@ html{
     background-clip: content-box;
 } */
 
-.banner{
+.banner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(4,9,30,0),rgba(0, 0, 0, 0.5)),url(../images1/bg.jpg);
+    background: linear-gradient(rgba(4, 9, 30, 0), rgba(0, 0, 0, 0.5)), url(../images1/bg.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 0;
@@ -58,32 +62,32 @@ html{
     justify-content: center;
 }
 
-.header{
+.header {
     background: rgba(0, 0, 0, 40%);
     backdrop-filter: blur(5px);
     width: 100%;
     /* height: 20%; */
     background-position: fixed;
-    position: fixed; 
+    position: fixed;
     top: 0;
     margin-bottom: 0;
     z-index: 2;
 }
 
-.container{
+.container {
     width: 1140px;
     margin: auto;
 }
 
 /* navbar */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar h1{
+.navbar h1 {
     color: white;
     font-size: 50px;
     transition: 1s;
@@ -91,21 +95,23 @@ html{
     font-family: 'Dancing Script', cursive;
     /* font-family: 'Bebas Neue', sans-serif; */
 }
-.navbar h1:hover{
+
+.navbar h1:hover {
     text-shadow: 20px 20px 25px black;
 }
 
-.navlink ul{
+.navlink ul {
     margin: 40px;
     display: flex;
 }
 
-.navlink ul li{
+.navlink ul li {
     text-align: center;
     padding-left: 20px;
     list-style: none;
 }
-.navlink ul li a{
+
+.navlink ul li a {
     text-decoration: none;
     color: white;
     position: relative;
@@ -114,7 +120,7 @@ html{
     transform: 1s;
 }
 
-.navlink ul li a::after{
+.navlink ul li a::after {
     content: '';
     width: 00;
     height: 3px;
@@ -126,17 +132,17 @@ html{
     border-radius: 5px;
 }
 
-.navlink ul li a:hover::after{
+.navlink ul li a:hover::after {
     width: 100%;
 }
 
-.navlink ul li .active-btn::after{
+.navlink ul li .active-btn::after {
     width: 100%;
 }
 
 /* body */
 
-.text-box{
+.text-box {
     font-size: 30px;
     display: flex;
     /* top: 36%; */
@@ -144,7 +150,7 @@ html{
     position: absolute;
 }
 
-.text-col{
+.text-col {
     color: white;
     float: right;
     padding: 20px 0px;
@@ -157,7 +163,7 @@ html{
 }
 
 
-.text-col h1 span{
+.text-col h1 span {
     text-shadow: 20px 20px 20px rgb(0 0 0 / 50%);
     font-family: 'Raleway', sans-serif;
     /* width: 6000px !important; */
@@ -165,19 +171,20 @@ html{
 
 
 
-.text-col h1{
+.text-col h1 {
     margin-bottom: 20px;
     /* width: 650px; */
     font-size: 50px;
 }
 
-.text-col a{
+.text-col a {
     font-size: 15px;
     text-decoration: none;
     text-align: right;
     color: white;
 }
-.text-col a i{
+
+.text-col a i {
     font-size: 15px;
 }
 
@@ -187,7 +194,7 @@ html{
 
 /* about */
 
-.about{
+.about {
     width: 100%;
     text-align: center;
     margin-top: 40px;
@@ -195,25 +202,25 @@ html{
     height: 80vh;
 }
 
-#about-con{
+#about-con {
     margin: auto;
 }
 
-section h1{
+section h1 {
     font-size: 45px;
     /* text-transform: uppercase; */
 }
 
-.about-box{
+.about-box {
     width: 100%;
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
     justify-content: space-between;
-} 
+}
 
-.about-col{ 
+.about-col {
     flex-basis: 48%;
     width: 500px;
     height: 300px;
@@ -225,21 +232,21 @@ section h1{
 
 }
 
-#photo img{
+#photo img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     position: absolute;
     top: 35px;
     left: 130px;
-    
+
 }
 
-.about-col h2{
+.about-col h2 {
     font-size: 35px;
 }
 
-.about-col p{
+.about-col p {
     margin-top: 15px;
     line-height: 20px;
     word-spacing: 1px;
@@ -247,21 +254,21 @@ section h1{
     font-size: large;
 }
 
-.title h1{
+.title h1 {
     position: relative;
 }
 
-.about .title h1::before{
+.about .title h1::before {
     height: 2.5px;
 }
 
-.about:hover>.title h1::before{
+.about:hover>.title h1::before {
     width: 130px;
 }
 
 /* education */
 
-.edu{
+.edu {
     width: 100%;
     text-align: center;
     margin-top: 40px;
@@ -269,7 +276,7 @@ section h1{
     /* height: 80vh; */
 }
 
-.edu:hover>.title h1::before{
+.edu:hover>.title h1::before {
     width: 217px;
 }
 
@@ -278,7 +285,7 @@ section h1{
     max-width: 1200px;
     margin: 0 auto;
 }
-  
+
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
@@ -290,7 +297,7 @@ section h1{
     left: 50%;
     margin-left: -3px;
 }
-  
+
 /* Container around content */
 .cont {
     padding: 10px 40px;
@@ -300,8 +307,8 @@ section h1{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-  
-  /* The circles on the timeline */
+
+/* The circles on the timeline */
 .cont::after {
     content: '';
     position: absolute;
@@ -314,19 +321,19 @@ section h1{
     border-radius: 50%;
     z-index: 0;
 }
-  
+
 /* Place the container to the left */
 .left {
     left: 0;
 }
-  
+
 /* Place the container to the right */
 .right {
     left: 575px;
 }
-  
- 
-  
+
+
+
 /* Fix the circle for containers on the right side */
 .right::after {
     left: -16px;
@@ -342,34 +349,35 @@ section h1{
     text-align: left;
 }
 
-.content h2{
+.content h2 {
     margin-bottom: 10px;
 }
 
-.content p{
+.content p {
     margin-bottom: 6px;
     font-size: 15px;
     color: gray;
 }
 
-.content p i{
+.content p i {
     margin-right: 8px;
 }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 1200px) {
+
     /* Place the timelime to the left */
     .timeline::after {
         left: 26px;
     }
-    
+
     /* Full-width containers */
     .cont {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .cont::before {
         left: 60px;
@@ -377,12 +385,13 @@ section h1{
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
-  
+
     /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
+    .left::after,
+    .right::after {
         left: 15px;
     }
-    
+
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
@@ -391,7 +400,7 @@ section h1{
 
 /* skills */
 
-.skills{
+.skills {
     width: 100%;
     text-align: center;
     margin-top: 40px;
@@ -400,7 +409,7 @@ section h1{
 }
 
 
-.title h1::before{
+.title h1::before {
     content: "";
     width: 0px;
     height: 2px;
@@ -411,19 +420,19 @@ section h1{
     border-radius: 10px;
 }
 
-.skills .title h1::before{
+.skills .title h1::before {
     height: 2.5px;
 }
 
-.skills:hover>.title h1::before{
+.skills:hover>.title h1::before {
     width: 115px;
 }
 
-.skills-box{
+.skills-box {
     margin-bottom: 100px;
 }
 
-.skills-row{
+.skills-row {
     margin-top: 40px;
     /* margin-bottom: 50px; */
     display: flex;
@@ -431,7 +440,7 @@ section h1{
     /* border: 1px solid blue; */
 }
 
-.skills-col{
+.skills-col {
     text-align: left;
     border-radius: 5px;
     text-align: left;
@@ -444,16 +453,16 @@ section h1{
     width: 115px; */
 }
 
-.skills-col i{
+.skills-col i {
     font-size: 100px;
 }
 
-.skills-col img{
+.skills-col img {
     height: 100px;
     width: 100px;
 }
 
-.skills-col p{
+.skills-col p {
     margin-top: 5px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
@@ -461,50 +470,50 @@ section h1{
 
 /* -----------Projects----------- */
 
-.project{
+.project {
     width: 100%;
     text-align: center;
     margin-top: 50px;
     padding-top: 110px;
 }
 
-.project .title h1::before{
+.project .title h1::before {
     height: 2.5px;
 }
 
-.project:hover>.title h1::before{
+.project:hover>.title h1::before {
     width: 250px;
 }
 
-.project .title h1{
+.project .title h1 {
     padding: 10px;
 }
 
-.project-box{
+.project-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-    
+
 }
 
-.project-col{
+.project-col {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.project-col img{
+.project-col img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.5),#95a5a6);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #95a5a6);
     border-radius: 10px;
     position: absolute;
     left: 0%;
@@ -521,19 +530,19 @@ section h1{
     transition: 1s;
 }
 
-.layer h3{
+.layer h3 {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer .links{
+.layer .links {
     width: 50%;
     display: flex;
     justify-content: space-around;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: black;
     text-decoration: none;
@@ -546,17 +555,17 @@ section h1{
     font-weight: 900;
 }
 
-.project-col:hover img{
+.project-col:hover img {
     transform: scale(1.1);
 }
 
-.project-col:hover .layer{
+.project-col:hover .layer {
     height: 100%;
 }
 
 /* -----------Contact----------- */
 
-.contact{
+.contact {
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -565,15 +574,15 @@ section h1{
     padding-top: 130px;
 }
 
-.contact .title h1::before{
+.contact .title h1::before {
     height: 2.5px;
 }
 
-.contact:hover>.title h1::before{
+.contact:hover>.title h1::before {
     width: 242px;
 }
 
-.contact-box{
+.contact-box {
     display: flex;
     text-align: left;
     align-items: center;
@@ -581,34 +590,37 @@ section h1{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.contact-1{
+
+.contact-1 {
     flex-basis: 35%;
     margin-bottom: 80px;
 }
-.contact-2{
+
+.contact-2 {
     flex-basis: 60%;
 }
 
-.contact-1 p{
+.contact-1 p {
     margin-top: 20px;
     font-size: 20px;
 }
 
-.contact-1 p a{
+.contact-1 p a {
     text-decoration: none;
     color: #000;
     font-size: 20px;
 }
 
-.contact-1 p i{
+.contact-1 p i {
     margin-right: 15px;
 }
 
-.contact-2 form{
+.contact-2 form {
     width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 8px;
@@ -618,7 +630,7 @@ form input, form textarea{
     border: 2px solid black;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     margin-top: 20px;
     background: #000;
@@ -628,41 +640,42 @@ form input, form textarea{
     cursor: pointer;
 }
 
-.cv{
+.cv {
     padding: 10px 30px;
     margin-top: 20px;
 }
 
-.cv a{
+.cv a {
     text-decoration: none;
     color: white;
     width: 100%;
 }
 
-.cv:hover>a{
+.cv:hover>a {
     color: #000;
 }
 
-.btn:hover{
+.btn:hover {
     background: white;
     border-color: black;
     color: black;
 }
 
-#msg{
+#msg {
     color: #61b752;
     margin-top: 15px;
     display: block;
 }
 
-.foot{
+.foot {
     width: 100%;
     margin-top: 40px;
     height: 40vh;
-    background: #2A3B47;;
+    background: #2A3B47;
+    ;
 }
 
-.foot-box{
+.foot-box {
     margin: 20px;
     padding-top: 50px;
     display: flex;
@@ -670,24 +683,24 @@ form input, form textarea{
     justify-content: space-between;
 }
 
-.foot-col h1{
+.foot-col h1 {
     color: whitesmoke;
     font-size: 25px;
 }
 
 
-.foot-item{
+.foot-item {
     margin-top: 20px;
     color: #697477;
     display: flex;
     flex-direction: column;
 }
 
-.foot-item p{
+.foot-item p {
     padding-bottom: 4px;
 }
 
-.foot-item a{
+.foot-item a {
     padding-left: 0;
     color: #697477;
     text-decoration: none;
@@ -695,11 +708,11 @@ form input, form textarea{
     transition: 0.5s;
 }
 
-.foot-item a:hover{
+.foot-item a:hover {
     color: white;
 }
 
-.icons a{
+.icons a {
     text-decoration: none;
     font-size: 25px;
     margin-right: 15px;
@@ -708,12 +721,12 @@ form input, form textarea{
     padding: 2px;
 }
 
-.icons a:hover{
+.icons a:hover {
     color: whitesmoke;
     transform: translateY(-5px);
 }
 
-.contact-2 span{
+.contact-2 span {
     height: 20px;
 }
 
@@ -724,13 +737,14 @@ form input, form textarea{
 
 
 
-@media screen and (max-width: 1150px){
-    .container{
+@media screen and (max-width: 1150px) {
+    .container {
         width: auto;
         /* margin: auto; */
         padding: 10px 10%;
     }
-    .navbar{
+
+    .navbar {
         display: flex;
         flex-direction: column;
         margin-top: 15px;
@@ -738,21 +752,21 @@ form input, form textarea{
         align-items: center;
     }
 
-    .navlink ul{
+    .navlink ul {
         margin: 10px;
         display: flex;
-        
+
     }
 
-    .navlink ul li{
+    .navlink ul li {
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
         list-style: none;
-        
+
     }
 
-    .navlink ul li a{
+    .navlink ul li a {
         text-decoration: none;
         color: white;
         position: relative;
@@ -761,10 +775,10 @@ form input, form textarea{
         transform: 1s;
     }
 
-    .banner{
+    .banner {
         width: 100%;
         height: 100vh;
-        background: linear-gradient(rgba(4,9,30,0),rgba(0, 0, 0, 0.5)),url(../images1/bg_responcive.jpg);
+        background: linear-gradient(rgba(4, 9, 30, 0), rgba(0, 0, 0, 0.5)), url(../images1/bg_responcive.jpg);
         /* background: rgb(94, 94, 94); */
         background-size: cover;
         background-position: center left;
@@ -776,13 +790,13 @@ form input, form textarea{
         justify-content: center;
     }
 
-    .text-box{
+    .text-box {
         right: 40px;
         justify-content: center;
         align-items: center;
     }
 
-    .text-col{
+    .text-col {
         width: auto;
         height: auto;
         display: flex;
@@ -790,26 +804,26 @@ form input, form textarea{
         justify-content: center;
     }
 
-    .box{
+    .box {
         width: auto;
         /* display: flex; */
         /* height: 315px; */
         width: 300px;
     }
 
-    .box>h1{
+    .box>h1 {
         height: 300px;
         width: 250px;
     }
 
     /* about */
-    .about{
+    .about {
         margin-top: 80px;
         margin-bottom: 190px;
-        
+
     }
 
-    .about-box{
+    .about-box {
         margin-top: 70px;
         display: flex;
         height: 80vh;
@@ -821,7 +835,7 @@ form input, form textarea{
 
     }
 
-    .about-col{
+    .about-col {
         display: flex;
         width: 300px;
         height: 300px;
@@ -830,7 +844,7 @@ form input, form textarea{
         text-align: justify;
     }
 
-    .about-box1{
+    .about-box1 {
         background: url(../images1/new.jpg);
         background-size: cover;
         background-position: center center;
@@ -840,56 +854,57 @@ form input, form textarea{
         display: block;
     }
 
-    #about-text p{
+    #about-text p {
         text-align: center;
         line-height: 20px;
     }
 
-    #photo img{
+    #photo img {
         /* width: 250px;
         height: 250px;
         border-radius: 50%; */
         display: none;
     }
 
-    .skills{
+    .skills {
         height: auto;
         width: auto;
     }
-    
-    .skills-row{
+
+    .skills-row {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .project-box{
+    .project-box {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .layer{
+    .layer {
         height: 100%;
     }
 
-    .contact{
+    .contact {
         height: 100vh;
     }
 
-    .contact-box{
+    .contact-box {
         flex-direction: column;
     }
 
 
-    .foot{
+    .foot {
         height: 70vh;
     }
-    .foot-box{
+
+    .foot-box {
         flex-wrap: wrap;
         padding-top: 10px;
         align-items: start;
     }
 
-    .foot-col{
+    .foot-col {
         margin: 15px;
     }
 }
