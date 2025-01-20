@@ -655,7 +655,8 @@ form textarea {
     color: #000;
 }
 
-.btn:hover {
+.btn:hover,
+.upi-btn:hover {
     background: white;
     border-color: black;
     color: black;
@@ -730,11 +731,77 @@ form textarea {
     height: 20px;
 }
 
+.coffee {
+    margin-top: 20px;
+}
+
+.coffee button{
+    border: none;
+    border-radius: 2px;
+}
+.coffee img {
+    height: 40px;
+}
 
 
+.modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
 
+.modal.show{
+    pointer-events: auto;
+    opacity: 1;
+}
 
+.open{
+    border-radius: 2px;
+    border: none;
+}
 
+.upi {
+    padding: 25px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.upi img{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.upi button{
+    height: 30px;
+    width: 80px;
+}
+
+.upi-btn{
+
+    /* padding: 10px 20px; */
+    /* margin-top: 20px; */
+    background: #000;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
 
 
 @media screen and (max-width: 1150px) {
@@ -895,7 +962,7 @@ form textarea {
 
 
     .foot {
-        height: 70vh;
+        height: 75vh;
     }
 
     .foot-box {

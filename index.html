@@ -347,6 +347,7 @@
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
+                
                 <div class="foot-col">
                     <h1>Social Meadia</h1>
                     <div class="foot-item">
@@ -364,7 +365,6 @@
                                 <i class="fa-brands fa-bluesky"></i>
                             </a>
                             <a href="https://twitter.com/AniketDey_?t=77IrFB-_2N0jn8jHbGXH6w&s=08" target="_blank">
-                                <!-- <i class="fa-brands fa-twitter"></i> -->
                                 <i class="fa-brands fa-x-twitter"></i>
                             </a>
                             <a href="https://instagram.com/aniket_dey_?igshid=YmMyMTA2M2Y=" target="_blank">
@@ -373,8 +373,11 @@
                             <a href="https://www.threads.net/@aniket_dey_" target="_blank">
                                 <i class="fa-brands fa-threads"></i>
                             </a>
-                            
-                            
+                        </div>
+                        <div class="icon coffee">
+                            <a id="open">
+                                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -382,9 +385,32 @@
         </div>
     </footer>
 
+    <!-- buy me coffee modal -->
+    <div class="modal" id="modal">
+        <div class="upi">
+            <h1>Thanks Buddy</h1>
+            <img src="images1/upi_new.png" alt="">
+            <button class="upi-btn" id="close">Close</button>
+        </div>
+    </div>
 
     <!-- lenis Smooth Scroll CDN -->
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+
+    <!-- buy me a coffee logic -->
+    <script>
+        const open = document.getElementById('open');
+        const modal = document.getElementById('modal');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click',()=> {
+            modal.classList.add('show');
+        })
+
+        close.addEventListener('click',()=> {
+            modal.classList.remove('show');
+        })
+    </script>
 
     <!-- Lenis Smooth Scroll setup JS -->
     <script>
