@@ -843,6 +843,7 @@ form textarea {
         font-size: 12px;
         font-weight: 300;
         transform: 1s;
+        flex-wrap: nowrap;;
     }
 
     .banner {
@@ -960,7 +961,8 @@ form textarea {
     }
 
     .contact {
-        height: 100vh;
+
+        margin-bottom: 200px;
     }
 
     .contact-box {
