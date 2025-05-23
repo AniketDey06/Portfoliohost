@@ -540,9 +540,9 @@ section h1 {
 }
 
 .layer .links {
-    width: 50%;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .layer a {
