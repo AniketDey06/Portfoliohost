@@ -232,6 +232,10 @@ section h1 {
 
 }
 
+.about-project a{
+    color: black;
+}
+
 #photo img {
     width: 250px;
     height: 250px;
