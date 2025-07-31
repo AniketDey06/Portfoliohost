@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Blank Script';
+    src: url('../fonts/Blank Script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Lenis Smooth Scroll Setup CSS */
 html.lenis,
 html.lenis body {
@@ -63,10 +70,11 @@ html {
 }
 
 .header {
+    display: flex;
     background: rgba(0, 0, 0, 40%);
     backdrop-filter: blur(5px);
     width: 100%;
-    /* height: 20%; */
+    height: 9%;
     background-position: fixed;
     position: fixed;
     top: 0;
@@ -89,10 +97,10 @@ html {
 
 .navbar h1 {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     transition: 1s;
     z-index: 200;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Blank Script', cursive;
     /* font-family: 'Bebas Neue', sans-serif; */
 }
 
@@ -101,7 +109,7 @@ html {
 }
 
 .navlink ul {
-    margin: 40px;
+    /* margin: 40px; */
     display: flex;
 }
 
@@ -115,7 +123,7 @@ html {
     text-decoration: none;
     color: white;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     transform: 1s;
 }
@@ -232,7 +240,7 @@ section h1 {
 
 }
 
-.about-project a{
+.about-project a {
     color: black;
 }
 
@@ -257,10 +265,11 @@ section h1 {
     font-size: large;
 }
 
-.about-col p span{
+.about-col p span {
     display: block;
     margin-bottom: 10px;
 }
+
 .title h1 {
     position: relative;
 }
@@ -742,16 +751,17 @@ form textarea {
     margin-top: 20px;
 }
 
-.coffee button{
+.coffee button {
     border: none;
     border-radius: 2px;
 }
+
 .coffee img {
     height: 40px;
 }
 
 
-.modal{
+.modal {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.3);
     height: 100vh;
@@ -767,12 +777,12 @@ form textarea {
     transition: opacity 0.3s ease;
 }
 
-.modal.show{
+.modal.show {
     pointer-events: auto;
     opacity: 1;
 }
 
-.open{
+.open {
     border-radius: 2px;
     border: none;
 }
@@ -788,17 +798,17 @@ form textarea {
     gap: 15px;
 }
 
-.upi img{
+.upi img {
     border: 2px solid black;
     border-radius: 5px;
 }
 
-.upi button{
+.upi button {
     height: 30px;
     width: 80px;
 }
 
-.upi-btn{
+.upi-btn {
 
     /* padding: 10px 20px; */
     /* margin-top: 20px; */
@@ -812,6 +822,10 @@ form textarea {
 
 
 @media screen and (max-width: 1150px) {
+    .header {
+        height: 13%;
+    }
+
     .container {
         width: auto;
         /* margin: auto; */
@@ -847,7 +861,8 @@ form textarea {
         font-size: 12px;
         font-weight: 300;
         transform: 1s;
-        flex-wrap: nowrap;;
+        flex-wrap: nowrap;
+        ;
     }
 
     .banner {
@@ -928,7 +943,7 @@ form textarea {
         display: block;
     }
 
-    #about-text{
+    #about-text {
         width: 300px;
         height: 500px;
     }
@@ -953,6 +968,16 @@ form textarea {
     .skills-row {
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 10px
+    }
+
+    .skills-col {
+        margin-top: 20px
+    }
+
+    .skills-col img {
+        height: 90px;
+        width: 90px;
     }
 
     .project-box {
