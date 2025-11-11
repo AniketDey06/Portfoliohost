@@ -687,14 +687,14 @@ form textarea {
 .foot {
     width: 100%;
     margin-top: 40px;
-    height: 40vh;
+    /* height: 45vh; */
     background: #2A3B47;
-    ;
 }
 
 .foot-box {
-    margin: 20px;
+    /* margin: 20px; */
     padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-basis: 33%;
     justify-content: space-between;
